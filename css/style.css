@@ -21,6 +21,13 @@ a {
    color: inherit;
 }
 
+.section-title {
+   margin-bottom: 50px;
+   font-size: 48px;
+   font-weight: 700;
+   text-align: center;
+}
+
 .wrapper {
    min-height: 100%;
    display: flex;
@@ -187,4 +194,68 @@ opacity: 1;
 .swiper-pagination-bullet-active{
    height: 6px;
    background-color: #fff;
+}
+
+.why-lease {
+   padding: 150px 0;
+}
+
+.why-lease__list {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 40px;
+   text-align: center;
+}
+
+.why-lease__item-img {
+   margin-bottom: 30px;
+}
+
+.why-lease__item-title {
+   margin-bottom: 30px;
+   font-size: 24px;
+   font-weight: 700;
+}
+
+.why-lease__item-text {
+   text-align: left;
+}
+
+.how-does {
+   padding-bottom: 150px;
+}
+
+.how-does__inner {
+   max-width: 600px;
+   margin: 0 auto;
+}
+
+.how__does-title {
+   font-size: 24px;
+   font-weight: 700;
+   padding-top: 50px;
+}
+
+.how__does-list {
+   padding: 50px 0 70px;
+   counter-reset: myCounter;
+}
+
+.how__does-item {
+   list-style-type: none;
+}
+
+.how__does-item::before{
+   counter-increment: myCounter;
+   content: counter(myCounter);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #0066FF;
+   font-size: 48px;
+   font-weight: 700;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   color: #fff;
 }
